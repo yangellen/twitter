@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="-245" y="-725"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Home-->
         <scene sceneID="PRs-sw-aBo">
             <objects>
-                <tableViewController id="jd5-az-gJ2" sceneMemberID="viewController">
+                <tableViewController id="jd5-az-gJ2" customClass="HomeTableViewController" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rS7-4y-Fbc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,19 +71,30 @@
                             <outlet property="delegate" destination="jd5-az-gJ2" id="HHO-tg-mYx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="wsZ-TQ-tiW"/>
+                    <navigationItem key="navigationItem" title="Home" id="wsZ-TQ-tiW">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="2pC-AL-0gu">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="onLogout:" destination="jd5-az-gJ2" id="nIc-rq-fpE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RnP-dM-8oL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="188" y="-17"/>
+            <point key="canvasLocation" x="-404" y="33"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2KN-Ag-LJf">
             <objects>
-                <navigationController id="ySJ-OR-RKF" sceneMemberID="viewController">
+                <navigationController wantsFullScreenLayout="YES" id="ySJ-OR-RKF" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aOv-qJ-W3m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.299496233" green="0.53219821599999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="jd5-az-gJ2" kind="relationship" relationship="rootViewController" id="JYD-EU-BCv"/>
@@ -91,7 +102,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jeY-8R-aBY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-465" y="-17"/>
+            <point key="canvasLocation" x="-1101" y="33"/>
         </scene>
     </scenes>
     <resources>
