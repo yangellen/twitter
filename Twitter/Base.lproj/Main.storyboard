@@ -90,7 +90,7 @@
                 <navigationController wantsFullScreenLayout="YES" id="ySJ-OR-RKF" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aOv-qJ-W3m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                         <color key="barTintColor" red="0.299496233" green="0.53219821599999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
